@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Simple GPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculate your GPA in simple Steps</h1>
+    <p>Kindly, input your data and view your GPA below. You can always add to the course as needed</p>
+
+    <div class="container">
+        <form action="">
+            <div class="form-group">
+                <label for="course-code">Course code/title:</label>
+                <input type="text" name="" placeholder="Course Code/Title">
+                <label for="grade-points">Grade Points:</label>
+                <select name="gp" >
+                    <option value="">Choose Grade point</option>
+                    <option value="5">A</option>
+                    <option value="4">B</option>
+                    <option value="3">C</option>
+                    <option value="2">D</option>
+                    <option value="1">E</option>
+                    <option value="0">F</option>
+                </select>
+                <label for="credit-unit">Credit Unit</label>
+                <input type="text" name="cu" placeholder="Credit Unit">
+            </div>
+            <div class="add">
+                <button class="submit">ADD COURSE</button>
+            </div>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
