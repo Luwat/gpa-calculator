@@ -1,7 +1,24 @@
-const form = document.querySelector('.form')
-const addCourseBtn = document.querySelector('.submit')
+const form = document.querySelector('.form');
+const addCourseBtn = document.querySelector('.submit');
+const sel = Array.prototype.slice.call(document.querySelector('select'));
+const btn = document.createElement('button');
+btn.innerText = 'Check Options'
+form.append(btn);
+btn.addEventListener('click', function(e){
 
+    let options = sel.map(function (option) {
+        calculate = 0;
+        option = Number(option.value)
+        calculate += option
+        console.log(calculate)
+        return calculate
+    });
+    return options.reduce(function(a, b) {
+        return a + b
+    }, 0)
 
+})
+console.log(sel);
 const appendDiv = (e) => {
     
     if (e.target.matches('.submit')) {
@@ -37,6 +54,7 @@ const appendDiv = (e) => {
         formGroup.append(select)
           
         form.append(formGroup)
+
     }
 };
 
